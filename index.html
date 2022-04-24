@@ -65,11 +65,58 @@
             <a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheat Sheet</a>
             <br>
             <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank">Icônes en HTML</a>
-        </div>               
+        </div>  
+        <div>         
             <h6>Vidéos -Titre H6</h6>
             <video src="sunrise.mp4" height="300" autoplay loop muted></video>
         </div>
     </section>
+
+    <!-- Formulaire -->
+    <section>
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" placeholder="Entrez votre nom">
+            </div>
+            <div>
+                <label for="age">Age :</label>
+                <input type="number" id="age" value="18" min="0" max="120">
+            </div>
+
+            <!-- input select -->
+            <div>
+                <label for="gender">Genre :</label>
+                <select id="gender">
+                    <option value="Homme">Homme</option>
+                    <option value="Femme" selected>Femme</option>
+                </select>
+            </div>
+           
+            <!-- input radio -->
+            <div>
+                <input type="radio" id="human" name="species" checked>
+                <label for="human">Humains</label>
+                <input type="radio" id="dog" name="species">
+                <label for="dog">Chiens</label>
+                <input type="radio" id="cat" name="species">
+                <label for="cat">Chats</label>
+            </div>
+
+            <textarea cols="30" rows="10" placeholder="Entrez votre demande"></textarea><br>
+
+            <!-- Input checkbox -->
+            <label>Accepter les CGV<input type="checkbox"></label><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+    
+    <footer>
+        <a href="mailto:test@gmail.com">Envoyez-nous un mail</a><br>
+        <a href="notice.txt" download="notice">Télécharger la notice</a>
+    </footer>
     
 </body>
 </html>
